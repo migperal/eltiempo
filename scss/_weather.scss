@@ -1,0 +1,76 @@
+.swal2-styled.swal2-confirm {
+    background-color: #0c64e5 !important;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background: rgb(13, 110, 253);
+    background: linear-gradient(45deg, rgba(13, 110, 253, 1) 0%, rgba(159, 87, 252, 1) 100%);
+    color: #efe9f5;
+}
+
+header {
+    #buscador {
+        width:300px;
+    }
+    .fa-location-crosshairs {
+        font-size: 1.6rem;
+        cursor: pointer;
+    }
+}
+
+main {
+    #temp-valor {
+        font-size: 2rem;
+    }
+    #icono-animado {
+        width: 20rem;
+    }
+    #temp-descripcion {
+        margin: 0;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    #ubicacion {
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    #fecha {
+        font-weight:300;
+        font-size: 1.2rem;
+    }
+    .datos-secundarios {
+        background: rgb(81, 13, 253);
+        background: linear-gradient(45deg, rgba(81, 13, 253, 1) 0%, rgba(98, 87, 252, 0.38139005602240894) 100%);
+        border-radius:0.4rem;
+        padding: 0.8rem;
+        width:400px;
+
+        h6 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.6rem;
+        }
+    }
+
+    #separador {
+        margin: 3.5rem 0;
+    }    
+}
+
+@include media-breakpoint-up(sm) {
+    main {
+        #separador {
+                margin: 0;
+            }
+    }
+}

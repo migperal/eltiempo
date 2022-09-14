@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El tiempo</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="scss/style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container mt-3">
+            <div class="row mb-3">
+                <div class="col d-flex justify-content-center">
+                    <h1>EL TIEMPO</h1>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <!-- Buscador por ciudad -->
+                <div class="col-9 d-flex justify-content-start"">
+                    <div id="buscador">
+                        <div class="input-group input-group">
+                            <input type="search" id="search" class="form-control" placeholder="Busca..." />
+                            <button id="btn-search" type="submit" class="btn btn-primary">Buscar</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Icono geolocalización -->
+                <div class="col-3 d-flex justify-content-end">
+                    <div id="icono-geo">
+                        <i id="btn-ubicacion" class="fa-solid fa-location-crosshairs"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Datos primarios -->
+        <div id="separador"></div>
+        <div class="container-sm mt-3">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 d-flex justify-content-center align-items-center">
+                    <h2 id="temp-valor"></h2>
+                </div>
+                <div class="col-sm-4 d-flex justify-content-center align-items-center">
+                    <img id="icono-animado" src="" alt="">
+                </div>
+                <div class="col-sm-4 d-flex justify-content-center align-items-center">
+                    <h2 id="temp-descripcion"></h2>
+                </div>
+            </div>
+        </div>
+        <div id="separador"></div>
+        <!-- Lugar y fecha -->
+        <div class="container-sm">
+            <div class="row">
+                <!-- Lugar consulta -->
+                <div class="col-12 d-flex justify-content-center">
+                    <p id="ubicacion" class="m-0"></p>
+                </div>
+                <!-- Fecha actual -->
+                <div class="col-12 d-flex justify-content-center">
+                    <span id="fecha"></span>
+                </div>
+            </div>
+        </div>
+        <!-- Datos secundarios -->
+        <div class="container mt-5">
+            <div id="datos-2nd" class="row">
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 d-flex justify-content-center">
+                    <!-- <div class="datos-secundarios">
+                        <h6>Humedad</h6>
+                        <p>524</p>
+                    </div>                    -->
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 d-flex justify-content-center">
+                    <!-- <div class="datos-secundarios">
+                        <span>Velocidad del Vientasdasdasdasdo</span>
+                    </div>                    -->
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 d-flex justify-content-center">
+                    <!-- <div class="datos-secundarios">
+                        <span>Velocidad del Viasdasdento</span>
+                    </div>                    -->
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 mb-3 d-flex justify-content-center">
+                    <!-- <div class="datos-secundarios">
+                        <span>Velocidad del Vieasssssssssssssssssssssssssnto</span>
+                    </div>                    -->
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>  
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <span>Miguel Peral - Copyright © 2022</span>
+                </div>
+            </div>
+        </div>     
+    </footer>
+   
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
